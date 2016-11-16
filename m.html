@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>腾讯体育年费会员活动第一波_腾讯体育</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="description" content="腾讯体育">
+    <meta name="keywords" content="">
+    <script type="text/javascript" src="http://js.aq.qq.com/js/aq_common.js"></script>
+    <link rel="shortcut icon" href="http://mat1.gtimg.com/sports/kbsweb/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="base.css" role="debug"/>
+    <link rel="stylesheet" href="kbs.css" role="debug"/>
+    <link rel="stylesheet" href="m.css" role="debug"/>
+    <link rel="stylesheet" href="jquery.mCustomScrollbar.min.css" role="debug"/>
+    <script src="jquery-1.11.3.js"></script>
+    <script src="jquery.mousewheel.min.js"></script>
+    <script src="jquery.mCustomScrollbar.min.js"></script>
+</head>
+<body>
+    
+    <div class="ticker-layer">
+    <span class="close-btn">×</span>
+
+    <div class="layer-title padd">
+        <h1 class="t14">我的观赛券</h1>
+        <div class="subTitle">
+           <img src="img/ticket-iconB.png" alt="" class="icon">
+           <span class="t18">您共有 <span class="colRed">20</span> 张未使用的观赛券</span>
+           <a href="javascript:;" class="t14 colBlu fr buy-more"> 购买更多观赛券 <span class="bold">&gt;</span></a>
+        </div>    
+    </div>
+
+    <div class="layer-amount">
+        <div class="info">
+           <img src="img/ticket-iconS.png" alt="" class="icon">
+           <span class="t16 color-gray6 marR">会员获赠观赛券一张</span>
+           <span class="t14 color-gray5">有效期至：2016-12-30</span>
+        </div> 
+        <div class="info">
+           <img src="img/ticket-iconS.png" alt="" class="icon">
+           <span class="t16 color-gray6 marR">会员获赠观赛券一张</span>
+           <span class="t14 color-gray5">有效期至：2016-12-30</span>
+        </div> 
+        <div class="info">
+           <img src="img/ticket-iconS.png" alt="" class="icon">
+           <span class="t16 color-gray6 marR">会员获赠观赛券一张</span>
+           <span class="t14 color-gray5">有效期至：2016-12-30</span>
+        </div>
+        <div class="info">
+           <img src="img/ticket-iconS.png" alt="" class="icon">
+           <span class="t16 color-gray6 marR">会员获赠观赛券一张</span>
+           <span class="t14 color-gray5">有效期至：2016-12-30</span>
+        </div>
+        <div class="info">
+           <img src="img/ticket-iconS.png" alt="" class="icon">
+           <span class="t16 color-gray6 marR">会员获赠观赛券一张</span>
+           <span class="t14 color-gray5">有效期至：2016-12-30</span>
+        </div>
+        
+    </div>
+
+    <div class="layer-helper padd t12 color-gray6">
+        <p>小帮手</p>
+        <p>Q：如何使用观赛券？</p>
+        <p>A：在您无法观看的付费场比赛中，点击黑色页面上的“购买/使用观赛券”即可默认消耗最快过
+        <span class="paddL">期的一张观赛券观看该付费比赛。每场比赛只会消耗一张观赛券。</span></p>
+    </div>
+</div>
+
+    <script>
+        $(".close-btn").on("click" , function() {
+          $(".ticker-layer").hide()
+        })
+
+        var update = function(){
+          setInterval(function () {
+            var info = '<div class="info"><img src="img/ticket-iconS.png" alt="" class="icon"><span   class="t16 color-gray6 marR">会员获赠观赛券一张</span><span class="t14 color-gray5"> 有效期至：2016-12-30</span></div>'
+            $(".info").parent().append(info);
+            $('.layer-amount').mCustomScrollbar("update");//自动更新
+            $(".layer-amount").mCustomScrollbar("scrollTo", "bottom");//滚动条自动到底部
+          }, 5000);
+
+        }
+        update();
+
+        $(".layer-amount").mCustomScrollbar({
+          scrollButtons:{
+              enable:false,//是否使用上下滚动按钮
+              scrollType:"continuous",
+              scrollSpeed:80,
+              scrollAmount:80
+          },
+          theme:"minimal-dark"
+        });
+
+         
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+.ticker-layer {
+    width: 570px;
+    max-height: 445px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -185px;
+    margin-left: -280px;
+}
+
+.ticker-layer .padd {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 35px;
+}
+
+.ticker-layer .icon {
+    float: left;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.ticker-layer .close-btn {
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    font-size: 40px;
+    background-color: #c9caca;
+}
+
+.ticker-layer .close-btn:hover {
+    background-color: #bfbfbf;
+}
+
+.ticker-layer .layer-title {
+    color: #202020;   
+    border-bottom: 1px solid #e3ebf0;
+}
+
+.ticker-layer .layer-title .colRed {
+    color: #f65653;
+}
+
+.ticker-layer .layer-title .colBlu {
+    color: #3374e0;
+}
+
+.ticker-layer .layer-title .bold {
+    font-weight: bold;
+}
+
+.ticker-layer .layer-title .subTitle {
+    height: 35px;
+    color: #222222;  
+    line-height: 35px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.ticker-layer .layer-amount {
+    width: 570px;
+    margin-bottom: 16px;
+    max-height: 210px;
+}
+
+.ticker-layer .layer-amount .info {
+    width: 525px;
+    height: 17px;
+    line-height: 17px;
+    padding: 16px 0;
+    border-bottom: 1px solid #eeeeee;
+    margin-left: 20px;
+}
+
+.ticker-layer .layer-amount .info .marR {
+    margin-right: 185px;
+}
+
+.ticker-layer .layer-helper {
+   line-height: 20px;
+   padding-top: 0;
+   padding-bottom: 25px;
+}
+
+.ticker-layer .layer-helper .paddL {
+    padding-left: 20px;
+}
+

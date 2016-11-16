@@ -1,0 +1,853 @@
+/*!
+ * v1.0
+ */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*****************page*********************/
+.kbs-container {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+/*****************block*********************/
+.kbs-section {
+  margin-top: 20px;
+}
+
+/*****************sidebar*********************/
+.kbs-sidenav {
+  width: 198px;
+  padding: 0;
+  line-height: 50px;
+  border:1px solid #eee;
+
+}
+
+.kbs-sidenav li a {
+  color: inherit;
+  display: block;
+  padding-left: 24px;
+  border-left: 5px solid #fff;
+}
+
+.kbs-sidenav li:hover a,
+.kbs-sidenav li.cur a {
+  background: #eff3ff;
+  color: #3374e0;
+  border-left: 5px solid #346aff;
+}
+
+.kbs-sidenav .icon-arrows-right-small {
+  float: right;
+  margin-top: 18px;
+  margin-right: 10px;
+  visibility: hidden;
+}
+
+.kbs-sidenav a:active .icon-arrows-right-small,
+.kbs-sidenav li.cur .icon-arrows-right-small {
+  visibility: visible;
+}
+
+/*******************************字体字号********************************************/
+
+
+
+.t24 {
+  font-size: 24px;
+}
+
+.t20 {
+  font-size: 20px;
+}
+
+.t18 {
+  font-size: 18px;
+}
+
+.t16 {
+  font-size: 16px;
+}
+
+.t14 {
+  font-size: 14px;
+}
+
+.t12 {
+  font-size: 12px;
+}
+
+.t40 {
+  font-size: 40px;
+}
+
+.t36 {
+  font-size: 36px;
+}
+
+/*******************************行内列表********************************************/
+ul.inline, ol.inline {
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.inline>li, ol.inline>li {
+  display: inline-block;
+}
+
+/*******************************色值********************************************/
+.color-bluebg-hover:hover {
+  background-color: #265cf0;
+}
+
+.color-orangebg-hover:hover {
+  background-color: #ef8d00;
+}
+
+.color-redbg-hover:hover {
+  background-color: #f03f3c;
+}
+
+.color-blue1bg {
+  background: #eff3ff;
+}
+
+.color-blue1 {
+  color: #eff3ff;
+}
+
+.color-blue3bg {
+  background: #346aff;
+}
+
+.color-blue3 {
+  color: #346aff;
+}
+
+.color-blue2bg {
+  background: #3374e0;
+}
+
+.color-blue2 {
+  color: #3374e0;
+}
+
+.color-gray1bg {
+  background: #fafafa;
+}
+
+.color-gray1 {
+  color: #fafafa;
+}
+
+.color-gray2bg {
+  background: #f4f4f4;
+}
+
+.color-gray2 {
+  color: #f4f4f4;
+}
+
+.color-orange1bg {
+  background: #ff9800;
+}
+
+.color-orange1 {
+  color: #ff9800;
+}
+
+.color-gray3bg {
+  background: #eeeeee;
+}
+
+.color-gray3 {
+  color: #eeeeee;
+}
+
+.color-gray4bg {
+  background: #dddddd;
+}
+
+.color-gray4 {
+  color: #dddddd;
+}
+
+.color-gray5bg {
+  background: #999999;
+}
+
+.color-gray5 {
+  color: #999999;
+}
+
+.color-gray6bg {
+  background: #555555;
+}
+
+.color-gray6 {
+  color: #555555;
+}
+
+.color-whitebg {
+  background: #ffffff;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-red1bg {
+  background: #ff4340;
+}
+
+.color-red1 {
+  color: #ff4340;
+}
+
+
+/*******************************icon********************************************/
+.icon-tag-vip,
+.icon-order,
+.icon-guessed,
+.icon-qq20,
+.icon-qq30 {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.icon-tag-vip {
+  width: 28px;
+  height: 16px;
+  background-image: url(images/icon-tag-vip.png);
+}
+
+.icon-order {
+  width: 34px;
+  height: 34px;
+  background-image: url(images/icon-order.png);
+}
+
+.icon-guessed {
+  width: 34px;
+  height: 34px;
+  background-image: url(images/icon-guessed.png);
+}
+
+.icon-qq20 {
+  width: 20px;
+  height: 20px;
+  background: url(images/qq20.png) no-repeat 50% 50%;
+}
+
+.icon-qq30 {
+  width: 30px;
+  height: 30px;
+  background-image: url(images/qq30.png);
+}
+
+/*******************************赛程list********************************************/
+
+.kbs-list-item {
+  display: block;
+  border: 1px solid #eee;
+}
+
+.kbs-list-item + .kbs-list-item {
+  border-top:none;
+}
+
+.kbs-list-item ul{
+  width: 818px;
+  height: 59px;
+  line-height: 58px;
+  word-spacing: -6px;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+
+.kbs-list-item ul.has-tips {
+  height: 89px;
+}
+
+.kbs-list-item ul li .icon-tag-vip {
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.kbs-list-item ul li {
+  padding: 0;
+  word-spacing: 0;
+}
+
+.kbs-list-item ul .li-item1 {
+  width: 130px;
+  padding-left: 28px;
+}
+
+.kbs-list-item ul .li-item2 {
+  width: 128px;
+  vertical-align: bottom;
+}
+
+.kbs-list-item ul.reverse .li-item1 {
+  width: 128px;
+  padding-left: 0;
+}
+
+.kbs-list-item ul.reverse .li-item2 {
+  width: 130px;
+  padding-left: 28px;
+}
+
+.kbs-list-item ul .li-item3,
+.kbs-list-item ul .li-item5 {
+  width: 148px;
+}
+
+.kbs-list-item ul.not-vs .li-item3 {
+  width: 370px;
+}
+
+.kbs-list-item ul.not-vs .li-item3 span {
+  width: 300px;
+}
+
+.kbs-list-item ul.not-vs .vs-game {
+  display: none;
+}
+
+.kbs-list-item ul .li-item3 img,
+.kbs-list-item ul .li-item5 img{
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 18px;
+}
+
+.kbs-list-item ul .li-item1 span,
+.kbs-list-item ul .li-item3 span,
+.kbs-list-item ul .li-item5 span{
+  width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.kbs-list-item ul .li-item1 span {
+  width: 123px;
+}
+
+.kbs-list-item ul .li-item4 {
+  width: 80px;
+  height: 28px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 28px;
+  display: inline-block;
+}
+
+.kbs-list-item ul.pre-game .li-item4 {
+  color: #555;
+}
+
+.kbs-list-item ul.in-game .li-item4 {
+  color: #fff;
+  background: #ff4340;
+}
+
+.kbs-list-item ul.post-game .li-item4 {
+  color: #3374e0;
+}
+
+.kbs-list-item ul .li-item5 {
+  text-align: right;
+}
+
+.kbs-list-item ul .li-item5 img {
+  margin-right: 0;
+  margin-left: 18px;
+}
+
+.kbs-list-item ul .li-item6 {
+  width: 156px;
+  position: absolute;
+  right: 0;
+  line-height: 48px;
+  padding: 5px 0;
+}
+
+.kbs-list-item ul.icon2 .li-item6 {
+  line-height: 24px;
+}
+
+.kbs-list-item ul .li-item6 [class^="icon-"],
+.kbs-list-item ul .li-item6 [class*=" icon-"] {
+  vertical-align: -1px;
+  margin-left: 50px;
+  margin-right: 3px;
+}
+
+.kbs-list-item ul .li-item6 .icon-reserve {
+  margin-left: 78px;
+  line-height: 48px;
+  position: absolute;
+}
+
+.kbs-list-item ul .li-item6 .icon-order {
+  position: absolute;
+  top:0;
+  right: 0;
+  margin: 0;
+}
+
+.kbs-list-item ul.reserve-game .li-item6 .icon-reserve {
+  color: #999;
+}
+
+.kbs-list-item ul.reserved-game .li-item6 .icon-reserve {
+  color: #ff9800;
+}
+
+.kbs-list-item ul.reserved-game .li-item6 .icon-order {
+  display: block;
+}
+
+.kbs-list-item ul .li-item6 span {
+  display: none;
+}
+
+.kbs-list-item ul.in-game .li-item6{
+  color: #ff4340;
+}
+
+.kbs-list-item ul.pre-game .li-item6 {
+  color: #999;
+}
+
+.kbs-list-item ul.cancel-game li{
+  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+.kbs-list-item ul.cancel-game .li-item6{
+  color: #cccccc;
+}
+
+.kbs-list-item ul.post-game .li-item6 {
+  color: #3374e0;
+}
+
+.kbs-list-item ul.in-game .li-item6 span.with-text:after {
+  content: "\76f4\64ad\4e2d";
+}
+
+.kbs-list-item ul.pre-game .li-item6 span.video:after {
+  content: '\89c6\9891\76f4\64ad';
+}
+
+.kbs-list-item ul.pre-game .li-item6 span.image:after {
+  content: '\56fe\6587\76f4\64ad';
+}
+
+.kbs-list-item ul.pre-game .li-item6 span.data:after {
+  content: '\6570\636e\76f4\64ad';
+}
+
+.kbs-list-item ul.pre-game .li-item6 span.voice:after {
+  content: '\8bed\97f3\76f4\64ad';
+}
+
+.kbs-list-item ul.cancel-game .li-item6 span.video:after {
+  content: '\89c6\9891\76f4\64ad';
+}
+
+.kbs-list-item ul.cancel-game .li-item6 span.image:after {
+  content: '\56fe\6587\76f4\64ad';
+}
+
+.kbs-list-item ul.cancel-game .li-item6 span.data:after {
+  content: '\6570\636e\76f4\64ad';
+}
+
+.kbs-list-item ul.cancel-game .li-item6 span.voice:after {
+  content: '\8bed\97f3\76f4\64ad';
+}
+
+.kbs-list-item ul.post-game .li-item6 span.video:after {
+  content: '\89c6\9891\96c6\9526';
+}
+
+.kbs-list-item ul.post-game .li-item6 span.reset:after {
+  content: '\6bd4\8d5b\56de\653e';
+}
+
+.kbs-list-item ul.post-game .li-item6 span.data:after {
+  content: '\8be6\7ec6\6570\636e';
+}
+
+.kbs-list-item ul.type-data .li-item6 span.data {
+  display: block;
+}
+
+.kbs-list-item ul.type-video .li-item6 span.video {
+  display: block;
+}
+
+.kbs-list-item ul.type-reset .li-item6 span.reset {
+  display: block;
+}
+
+.kbs-list-item ul.type-image .li-item6 span.image {
+  display: block;
+}
+
+.kbs-list-item ul.type-voice .li-item6 span.voice {
+  display: block;
+}
+
+.kbs-list-item ul:hover {
+  background-color: #fafafa;
+}
+
+.kbs-list-item ul.pre-game:hover .li-item6 span,
+.kbs-list-item ul.pre-game.reserved-game:hover .li-item6 span{
+  display: none;
+}
+
+.kbs-list-item ul.pre-game.reserved-game:hover .li-item6 .icon-order {
+  display: block;
+}
+
+.kbs-list-item ul.pre-game:hover .li-item6 .reserve,
+.kbs-list-item ul.pre-game.reserved-game:hover .li-item6 .reserve
+{
+  display: block;
+}
+
+.kbs-list-item ul .tips {
+  display: none;
+  position: absolute;
+  width: 762px;
+  height: 30px;
+  margin: 0 28px;
+  line-height: 30px;
+  top:59px;
+  left: 0;
+  border-top: 1px dashed #eee;
+}
+
+.kbs-list-item ul.has-tips .tips {
+  display: block;
+}
+
+/*******************************header********************************************/
+.kbs-header {
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .95;
+  border-bottom: 1px solid #ddd;
+}
+
+.kbs-header [class*="Btn"] {
+  cursor: pointer;
+}
+
+.kbs-header > ul{
+  position: relative;
+  margin: 0 auto;
+  width: 1020px;
+  padding: 0 10px;
+  height: 63px;
+}
+
+.kbs-header > ul > li {
+  float: left;
+  height:63px;
+}
+
+a {
+  color: inherit;
+}
+
+.kbs-header li a {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.kbs-header li.logo a {
+  background: url(images/kbs-logo.png) no-repeat 0 50%;
+  width: 160px;
+  height: 63px;
+  margin-right: 60px;
+}
+
+.kbs-header li.tabList > a{
+  width: 90px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  line-height: 55px;
+  text-align: center;
+}
+.community .kbs-header a.community-tab-on,
+.download .kbs-header a.download-tab-on,
+.quiz .kbs-header a.guess-tab-on,
+.vip-intro .kbs-header a.vip-tab-on,
+.watchgame .kbs-header a.kbs-tab-on,
+.mall .kbs-header a.mall-tab-on {
+  background: #346aff;
+  color: #ffffff;
+}
+
+.kbs-header .tabList a:hover {
+  border-top-color: #346aff;
+}
+
+.kbs-header li.user {
+  float: right;
+  position: relative;
+  width: 118px;
+}
+
+.kbs-header li.user .logined {
+  display: none;
+}
+
+.kbs-header li.user .user-head {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 12px;
+  position: relative;
+}
+
+.kbs-header li.user .user-account{
+  position: absolute;
+  left: 50px;
+  top: 4px;
+  height: 50px;
+}
+
+.kbs-header li.user a img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.kbs-header li.user a.kb {
+  background: url("http://mat1.gtimg.com/sports/kbsweb/statics/coin_f477bf.png") no-repeat 0 50%;
+  padding-left: 20px;
+  font-weight: normal;
+  position: absolute;
+  bottom: 1px;
+}
+
+.kbs-header li.user .login-type {
+  position: absolute;
+  top:-6px;
+  right: -6px;
+  display: none;
+}
+
+.kbs-header li.user .icon-qq20 {
+  width: 16px;
+  height: 16px;
+  background-size: 20px;
+}
+.kbs-header li.user .icon-vip-small {
+  position: absolute;
+  bottom: -9px;
+  right: -6px;
+  font-size: 28px;
+  display: none;
+}
+
+.kbs-header li.user .type-qq .icon-qq20{
+  display: block;
+}
+
+.kbs-header li.user .type-wx .icon-wx-icon{
+  display: block;
+}
+
+.kbs-header .unread-msg{
+  border-radius: 10px;
+  line-height: 16px;
+  padding: 0 5px;
+  margin-bottom: 8px;
+  font-weight: normal;
+  display: none;
+}
+
+.kbs-header .user-login-list .unread-msg {
+  float: right;
+  margin: 7px 0 0 0;
+}
+
+.kbs-header li.user .user-login-list,
+.kbs-header .coinList,
+.kbs-header .recvSuccess{
+  display: none;
+  width: 146px;
+  position: absolute;
+  top: 63px;
+  border: 1px solid #eee;
+  z-index: 999;
+  left:-20px;
+}
+
+.kbs-header .user-login-list a{
+  display: block;
+  line-height: 30px;
+  padding: 0 10px 0 18px;
+}
+
+.kbs-header .coin {
+  text-align: center;
+  line-height: 30px;
+}
+
+.kbs-header .coinList li span {
+  padding: 0 8px;
+}
+
+.kbs-header .coin .icon-close {
+  position: absolute;
+  top:0;
+  right: 0;
+  cursor: pointer;
+}
+
+.kbs-header .recvSuccess span {
+  display: inline-block;
+  background: url(./images/recvsuccess.png) no-repeat 0 50%;
+  padding-left: 40px;
+  line-height: 60px;
+}
+
+.kbs-header .user-login-list a:hover {
+  background: #eff3ff;
+}
+
+.kbs-header .user-login-list .nick:hover {
+  background-color: inherit;
+}
+
+.kbs-header .user-login-list .nick span{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  left: 55px;
+  top:0;
+  width: 80px;
+}
+
+.kbs-header .user-login-list .open-vip{
+  padding: 0;
+  text-align: center;
+}
+
+.kbs-header .user .isVip .icon-vip-small{
+  display: block;
+}
+
+.kbs-header .isVip .open-vip {
+  display: none;
+}
+
+
+.kbs-header .user-login-list .open-vip:hover{
+  background: #ef8d00;
+}
+
+.kbs-header .user-login-list span {
+  display: inline-block;
+}
+
+.kbs-header .user-login-list .nick,
+.kbs-header .user-login-list .quit span{
+  line-height: 40px;
+}
+
+.kbs-header .user-login-list .sys-msg > span,
+.kbs-header .user-login-list .quit span {
+  border-top: 1px dashed #eee;
+  display: block;
+}
+
+.kbs-header .loginBtn {
+  position: absolute;
+  right: 20px;
+  line-height: 28px;
+  width: 46px;
+  top: 17px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.kbs-header .ad-before a{
+  position: absolute;
+  left:165px;
+}
+
+.kbs-header .community-ad {
+  display: none;
+}
+
+.kbs-header .watchgame-ad {
+  display: none;
+}
+
+.community .kbs-header .community-ad {
+  display: block;
+}
+
+.watchgame .kbs-header .watchgame-ad {
+  display: block;
+}
+
+.kbs-header .ad-before a img {
+  width: 65px;
+}
+
+.kbs-header .ad-after a img {
+  height: 63px;
+}
+
+.kbs-header .download {
+  position: relative;
+}
+
+.kbs-header .DLCode {
+  padding: 18px 14px;
+  position: absolute;
+  left: -15px;
+  opacity: .8;
+  color: #000;
+  display: none;
+}
+
+.kbs-header .DLCode div {
+  background: url("http://mat1.gtimg.com/sports/kbsweb/statics/weixin_6a9b86.jpg") no-repeat;
+  width: 93px;
+  padding-top: 93px;
+  text-align: center;
+}
+
+.kbs-header img {
+  border: none;
+}
